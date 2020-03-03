@@ -1,9 +1,15 @@
 import React from 'react';
+import List from './List'
+import './App.css';
 
-function App() {
+
+function App(props) {
   return (
     <main className='App'>
-      {/* content goes here */}
+      <header className='App-header'></header>
+      <div className='participants-list'>
+        <List participants={props.participants} />
+      </div>
     </main>
   );
 }
